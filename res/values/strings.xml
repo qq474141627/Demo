@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dota宝典</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    
+    <string name="tab_title1">选项卡1</string>
+    <string name="tab_title2">选项卡2</string>
+    <string name="tab_title3">选项卡3</string>
+
+    
+</resources>

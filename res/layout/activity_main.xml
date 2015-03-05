@@ -1,0 +1,75 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.92" />
+        
+        <RadioGroup
+            android:id="@+id/main_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+           
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="@string/tab_title1"
+                android:textColor="@color/radiotext_colot" />
+
+            <RadioButton
+                android:id="@+id/main_prop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                 android:text="@string/tab_title2"
+                android:paddingLeft="0dp"
+                android:textColor="@color/radiotext_colot" />
+
+            <RadioButton
+                android:id="@+id/main_emulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                 android:text="@string/tab_title3"
+                android:textColor="@color/radiotext_colot" />
+        </RadioGroup>
+
+        
+         <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="0dp"
+            android:layout_height="0dp" /> 
+            
+    </LinearLayout>
+
+</TabHost>
